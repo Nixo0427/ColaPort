@@ -20,6 +20,16 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles 'consumer-rules.pro'
+        ndk {
+            abiFilters "armeabi-v7a"
+        }
+        ndk {
+            moduleName "serial_port"                      //so文件，lib+moduleName+。so
+            abiFilters "armeabi", "armeabi-v7a", "x86"          //u的类型
+        }
+        ndk {    //C中打印logcat日志需要配置此项
+            ldLibs "log"
+        }
     }
 
     buildTypes {

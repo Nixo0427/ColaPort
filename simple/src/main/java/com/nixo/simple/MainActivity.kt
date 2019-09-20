@@ -3,10 +3,10 @@ package com.nixo.simple
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import callback.SerialCallBack
+import com.nixo.colaportlibrary.PortUtils.callback.SerialCallBack
 import com.nixo.tyndkprojcet.Utils.PortUtils.Port
 
-class MainActivity : AppCompatActivity(),SerialCallBack {
+class MainActivity : AppCompatActivity(), SerialCallBack {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
