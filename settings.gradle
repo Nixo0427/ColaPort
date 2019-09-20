@@ -1,0 +1,2 @@
+include ':app', ':colaportlibrary', ':SerialPortLibrarys', ':simple'
+rootProject.name='ColaPort'
