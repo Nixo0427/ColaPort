@@ -1,6 +1,5 @@
 package com.nixo.colaportlibrary.PortUtils.util;
 
-import android.util.Log;
 
 /**
  * Created by Nixo
@@ -69,7 +68,7 @@ public class ByteUtil {
             bytes[p] = (byte) (temp & 0xff);
             builder.append((temp & 0xff));
         }
-        Log.e("Nxo",hex);
+
         return bytes;
     }
 
@@ -131,6 +130,8 @@ public class ByteUtil {
         int CRC = 0x0000ffff;
         int POLYNOMIAL = 0x0000a001;
         int i, j;
+        StringBuilder builder = new StringBuilder();
+        int l = Integer.parseInt(builder.toString());
         for (i = 0; i < bytes.length; i++) {
             CRC ^= ((int) bytes[i] & 0x000000ff);
             for (j = 0; j < 8; j++) {

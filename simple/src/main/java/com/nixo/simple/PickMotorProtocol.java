@@ -1,6 +1,6 @@
 package com.nixo.simple;
 
-import com.nixo.colaportlibrary.PortUtils.BaseProtocol;
+import com.nixo.colaportlibrary.PortUtils.util.BaseProtocol;
 
 import org.jetbrains.annotations.NotNull;
 
